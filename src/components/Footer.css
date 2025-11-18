@@ -1,0 +1,26 @@
+.footer-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #486CB5;
+  padding: 20px 74px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 232px;
+  height: auto;
+  margin-right: auto;
+}
+
+
+.footer-copyright {
+  color: rgba(30, 30, 30, 0.62);
+  text-align: right;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+}

@@ -1,0 +1,165 @@
+.causas-section {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 60vh;
+  position: relative;
+  background: #FFF;
+  box-shadow: 0 538px 4px -54px rgba(0, 0, 0, 0.02) inset;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.causas-container {
+  display: flex;
+  width: 100%;
+  padding: 4vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vw;
+  background: #FFF;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5vw;
+  width: 100%;
+}
+
+.section-title {
+  width: 100%;
+  color: #1E1E1E;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: clamp(32px, 5vw, 72px);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.15vw;
+  margin: 0;
+}
+
+.section-subtitle {
+  width: 100%;
+  color: #757575;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: clamp(14px, 1.3vw, 20px);
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+  width: 100%;
+}
+
+
+.causa-card {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 2vw;
+  align-items: flex-start;
+  gap: 2vw;
+  flex-wrap: wrap;
+  align-self: stretch;
+  border-radius: 0.5vw;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.causa-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.2vw);
+}
+
+.causa-card-reverse {
+  justify-content: flex-end;
+}
+
+.icon-container {
+  display: flex;
+  width: 12vw;
+  height: 12vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5vw;
+  flex-shrink: 1;
+  min-width: 0;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.icon-blue { background: #2B7FFF; }
+.icon-purple { background: #AD46FF; }
+.icon-orange { background: #FF6901; }
+
+.icon-container svg {
+  width: 9vw;
+  height: 9vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vw;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-content-right {
+  align-items: flex-end;
+}
+
+.card-title {
+  width: 100%;
+  color: #1E1E1E;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: clamp(20px, 3vw, 48px);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.1vw;
+  margin: 0;
+}
+
+.card-title-right {
+  text-align: right;
+}
+
+.card-description {
+  width: 100%;
+  color: #757575;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: clamp(14px, 1.6vw, 24px);
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.05vw;
+  margin: 0;
+}
+
+.card-description-right {
+  text-align: right;
+}
+
+.logo-causas {
+  width: 14vw;
+  height: auto;
+  position: absolute;
+  right: 4vw;
+  top: 4vw;
+  z-index: 10;
+}

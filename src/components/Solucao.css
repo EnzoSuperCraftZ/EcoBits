@@ -1,0 +1,289 @@
+.solucao-section {
+  width: 100%;
+  max-width: 1920px;
+  height: 859px;
+  flex-shrink: 0;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.solucao-background {
+  width: 1920px;
+  height: 1004px;
+  flex-shrink: 0;
+  box-shadow: 0 1004px 4px 0 rgba(63, 91, 108, 0.60) inset;
+  position: absolute;
+  left: 0;
+  top: -78px;
+  object-fit: cover;
+}
+
+.solucao-logo {
+  width: 265px;
+  height: 115px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 1620px;
+  top: -58px;
+  z-index: 10;
+}
+
+.solucao-header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 1208px;
+}
+
+.solucao-title {
+  width: 836px;
+  color: rgba(243, 243, 243, 1);
+  text-align: center;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2.16px;
+  margin: 0;
+}
+
+.solucao-subtitle {
+  width: 1208px;
+  color: #EDEDED;
+  text-align: center;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+
+.action-cards {
+  position: absolute;
+  left: 50%;
+  top: 298px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 154px;
+  align-items: flex-start;
+}
+
+
+.action-card {
+  display: flex;
+  width: 407px;
+  min-height: 199px;
+  min-width: 240px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  background: rgba(217, 217, 217, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.action-icon {
+  flex-shrink: 0;
+}
+
+.action-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.action-card-title {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin: 0;
+  align-self: stretch;
+}
+
+.action-card-description {
+  flex: 1 0 0;
+  align-self: stretch;
+  color: #EDEDED;
+  text-align: center;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+
+.find-locations-button {
+  display: flex;
+  width: 409px;
+  height: 81px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  border: 2px solid #AFAFAF;
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  top: 630px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.find-locations-button span {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.find-locations-button:hover {
+  background: rgba(217, 217, 217, 0.15);
+  border-color: #D9D9D9;
+}
+
+@media (max-width: 1680px) {
+  .solucao-section {
+    height: auto;
+    padding: 64px 32px;
+  }
+
+  .solucao-background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .solucao-logo {
+    left: auto;
+    right: 30px;
+    top: 20px;
+    width: 200px;
+    height: 87px;
+  }
+
+  .solucao-header {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    left: 0;
+    transform: none;
+    top: 0;
+    margin: 80px auto 48px;
+  }
+
+  .solucao-title {
+    width: 100%;
+    font-size: 56px;
+    letter-spacing: -1.68px;
+  }
+
+  .solucao-subtitle {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .action-cards {
+    position: relative;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin: 0 auto 48px;
+    max-width: 600px;
+  }
+
+  .action-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .find-locations-button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    margin: 32px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .solucao-section {
+    padding: 32px 16px;
+  }
+
+  .solucao-logo {
+    width: 150px;
+    height: 65px;
+    right: 16px;
+    top: 16px;
+  }
+
+  .solucao-header {
+    margin: 80px auto 32px;
+  }
+
+  .solucao-title {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .solucao-subtitle {
+    font-size: 20px;
+  }
+
+  .action-card {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .action-card-title {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+  }
+
+  .action-card-description {
+    font-size: 16px;
+  }
+
+  .action-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .find-locations-button {
+    width: 100%;
+    max-width: 350px;
+    height: 70px;
+  }
+
+  .find-locations-button span {
+    font-size: 18px;
+  }
+}
