@@ -2,7 +2,7 @@ import './Info.css';
 
 function Info() {
   return (
-    <section className="info-section">
+    <section id="Info" className="info-section">
       <div className="info-background-primary"></div>
       <div className="info-background-secondary"></div>
       

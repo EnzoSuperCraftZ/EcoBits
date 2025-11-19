@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
 import Intro from './components/Intro'
 import Info from './components/Info'
 import CausasProblema from './components/CausasProblema'
@@ -8,8 +9,14 @@ import Solucao from './components/Solucao'
 import Footer from './components/Footer'
 import SiteMapa from './components/SiteMapa'
 
+
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
+
+  const handleNavigateToMap = () => {
+    setCurrentPage('map')
+    window.scrollTo(0, 0)
+  };
 
   const navigateToMap = () => {
     setCurrentPage('map')
@@ -27,6 +34,7 @@ function App() {
 
   return (
     <div className="app">
+      <Navbar onNavigateToMap={handleNavigateToMap} />
       <Intro onNavigateToMap={navigateToMap} />
       <Info />
       <CausasProblema />
@@ -38,3 +46,5 @@ function App() {
 }
 
 export default App
+
+

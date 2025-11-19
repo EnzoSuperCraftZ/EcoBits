@@ -59,3 +59,5 @@ function Intro({ onNavigateToMap }) {
 }
 
 export default Intro;
+
+
