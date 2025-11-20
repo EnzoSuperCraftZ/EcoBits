@@ -18,7 +18,7 @@
 
 .navbar-container.solid {
   background: #486CB5;
-  backdrop-filter: blur(6px); /* optional, looks nice */
+  backdrop-filter: blur(6px);
 }
 
 .navbar-logo {
